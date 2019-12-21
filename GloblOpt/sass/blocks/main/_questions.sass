@@ -1,0 +1,101 @@
+.questions
+    padding: 45px
+    .questions-form
+        display: block
+        margin: 0 auto
+        width: 896px
+        height: 300px
+        background-color: rgba(255, 255, 255, 0.7)
+        .questions-top-tab
+            width: 100%
+            height: 68px
+            background-color: #25333c
+            text-align: center
+            padding: 14px
+            z-index: 2
+            &__text
+                color: #ffffff
+                font-size: 19px
+                font-weight: 700
+                text-transform: uppercase
+            &__p
+                color: #ffffff
+                font-size: 14px
+                font-weight: 400
+                text-transform: uppercase
+        .input-wrapper
+            display: flex
+            flex-direction: row
+            justify-content: center
+            margin: 5px
+            &_questions
+                margin-top: 10px
+            &__item
+                margin: 5px
+                height: 50px
+                width: 267px
+                border-radius: 20px
+                border: solid 1px #898989
+                outline: none
+                padding-left: 28px
+                &_questions
+                    height: 45px
+                    width: 268px
+                    border: 1px solid rgba(0, 0, 0, 0.21)
+                    background-color: #ffffff
+        .area-wrapper
+            margin: 0
+            &__text
+                
+                resize: none
+                margin: 10px
+                border-radius: 20px
+                border: solid 1px #898989
+                padding: 30px
+                outline: none
+                border: none
+                width: 813px
+                height: 71px
+                overflow: hidden
+                display: block
+                margin: 0 auto
+        .button
+            &_questions
+            width: 180px
+            height: 45px
+            color: #ffffff
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            border: none
+            display: block
+            margin: 0 auto
+            margin-top: 20px
+
+@media screen and ( max-width: 768px )
+    .questions
+        .questions-form
+            width: 100%
+            .questions-top-tab
+                &__text
+                    font-size: 17px
+            .input-wrapper
+                &__item
+                    min-width: 11%
+                    padding-left: 2%
+            .area-wrapper
+                textarea
+                    width: 80%
+                    padding: 25px
+
+@media screen and ( max-width: 425px )
+    .questions
+        padding: 6%
+        .questions-form
+            min-height: 400px
+            .input-wrapper
+                flex-direction: column
+                align-items: center
+                &__item
+                    padding-left: 5%
+            .area-wrapper
