@@ -1,0 +1,94 @@
+.footer 
+    min-height: 180px
+    background-color: #25333c
+    .wrapper
+        justify-content: space-between
+    .text
+        color: #ffffff
+        font-size: 16px
+        font-weight: 700
+        align-self: center
+        padding-right: 200px
+    .mobile
+        &_foot
+            padding-left: 90px
+    .button
+        &_footer
+            width: 160px
+            height: 45px
+            color: #ffffff
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            align-self: center
+    .footer-line
+        hr
+            display: block
+            margin: 20px auto 15px
+            width: 100%
+            border: 1px solid grey
+    .footer-bottom
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .footer-site
+            opacity: 0.6
+            color: #ffffff
+            font-size: 13px
+            font-weight: 300
+        .footer-link
+            &__lin
+                color: $main-color
+                font-size: 13px
+                font-weight: 300
+                text-decoration: underline
+                &:hover
+                    cursor: pointer
+
+@media screen and ( max-width: 1024px )
+    .footer
+        .wrapper
+            justify-content: space-around
+            .text
+                padding-right: 0
+        .footer-bottom
+            justify-content: space-around
+            .footer-site
+                padding-right: 525px
+
+@media screen and ( max-width: 768px )
+    .footer
+        min-height: 290px
+        .wrapper
+            flex-direction: column
+            align-items: center
+            .text
+                margin-bottom: 10px
+            .mobile
+                &_foot
+                    padding-left: 0
+                    margin-bottom: 10px
+            .buttom
+                &_footer
+                    width: 24%
+        .footer-bottom
+            justify-content: space-around
+            .footer-site
+                padding-right: 0
+            
+@media screen and ( max-width: 425px )
+    .footer
+        .wrapper
+            .text
+                font-size: 14px
+                @media screen and ( max-width: 320px )
+                    font-size: 12px
+            .button
+                &_footer
+                    width: 42%
+        .footer-bottom
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .footer-site
+                padding-right: 0

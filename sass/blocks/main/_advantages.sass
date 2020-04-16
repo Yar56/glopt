@@ -1,0 +1,60 @@
+.advantages
+    .advantages-title
+        display: block
+        margin: 0 auto
+        text-align: center
+        &_h2
+            padding: 58px
+            margin: 0
+            color: #2e2e2e
+            font-size: 26px
+            font-weight: 700
+            text-transform: uppercase
+    .advantages-work
+        padding-bottom: 15px
+        .advantages-items
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            flex-wrap: wrap
+            &__item
+                display: flex
+                width: 50%
+                margin-bottom: 15px
+                padding: 0 40px 14px 15px;
+                .advantages-img
+                    align-self: flex-start
+                    margin-right: 17px
+                .advantages-text
+                    &__title
+                        color: $main-color
+                        font-size: 18px
+                        font-weight: 700
+                    &__descr
+                        font-weight: 300
+                        font-size: 16px
+                        line-height: 22px
+                        color: #3a3a3a
+                        margin: 10px 0 0 0 
+            
+@media screen and ( max-width: 768px )
+    .advantages
+        .advantages-title
+            &_h2
+                font-size: 24px
+
+@media screen and ( max-width: 425px )
+    .advantages
+        .advantages-work
+            .advantages-items
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                &__item
+                    width: 100%
+                    align-self: center
+                    .advantages-img > img
+                        width: 60px
+                        
+                    
+
